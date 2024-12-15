@@ -1,0 +1,242 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  background-color: #226B21;
+}
+
+.container {
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.title {
+  font-size: 72rpx;
+  color: #ffffff;
+  font-weight: bold;
+  margin: 60rpx 0;
+  letter-spacing: 4rpx;
+  text-align: center;
+}
+
+.illustration {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rest-illustration {
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.rest-btn {
+  width: 320rpx !important;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  color: #ffffff !important;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  font-weight: 500;
+  margin-bottom: 60rpx;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 模态窗口样式 */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 500;
+  padding: 0 50rpx;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 650rpx;
+  height: 80vh;
+  background: #ffffff;
+  border-radius: 24rpx;
+  padding: 30rpx;
+  position: relative;
+  box-shadow: 0 8rpx 24rpx rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  transform-origin: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20rpx;
+  right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 48rpx;
+  color: #999;
+  cursor: pointer;
+}
+
+.image-section {
+  flex: 1;
+  width: 100%;
+  border-radius: 16rpx;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.generated-image {
+  width: 100%;
+  border-radius: 12rpx;
+}
+
+.timer-section {
+  padding: 0;
+  margin-top: 20rpx;
+  width: 100%;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 6rpx;
+  background: #f0f0f0;
+  border-radius: 3rpx;
+  overflow: hidden;
+  margin-bottom: 12rpx;
+}
+
+.progress {
+  height: 100%;
+  background: #226B21;
+  transition: width 1s linear;
+}
+
+.time-text {
+  color: #333333;
+  font-size: 36rpx;
+  text-align: center;
+  margin: 8rpx 0;
+  font-weight: 600;
+}
+
+.control-btn {
+  width: 200rpx !important;
+  height: 72rpx;
+  line-height: 72rpx;
+  background: #226B21 !important;
+  color: #ffffff !important;
+  border-radius: 36rpx;
+  font-size: 28rpx;
+  font-weight: 500;
+  margin: 8rpx auto 0;
+  text-align: center !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.collapsing {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.content-collapsing {
+  transform: scale(0.95);
+}
+
+.hide {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+/* 祝贺消息样式 */
+.congrats {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.3s ease-out;
+  text-align: center;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.show-congrats {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.congrats-image-container {
+  width: 100%;
+  flex: 1;
+  margin-bottom: 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.congrats-image {
+  width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.congrats-text {
+  font-size: 36rpx;
+  color: #226B21;
+  font-weight: bold;
+  margin: 20rpx 0;
+}
+
+.congrats-close-btn {
+  width: 200rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  background: #226B21;
+  color: #ffffff;
+  border-radius: 36rpx;
+  font-size: 28rpx;
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.congrats-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8); /* 可选：添加半透明背景 */
+  z-index: 999;
+}
+
+.congrats-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
