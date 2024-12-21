@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.tip {
+  font-size: 36rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 60rpx;
+  padding: 0 40rpx;
+}
+
+.timer {
+  font-size: 80rpx;
+  color: white;
+  margin-bottom: 60rpx;
+}
+
+.control-btn, .finish-btn {
+  width: 200rpx;
+  background: white;
+  color: #333;
+}
+
+.encouragement {
+  font-size: 40rpx;
+  color: white;
+  text-align: center;
+  margin-bottom: 60rpx;
+  padding: 0 40rpx;
+} 

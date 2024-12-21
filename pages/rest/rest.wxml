@@ -1,0 +1,14 @@
+<view class="container" style="background-color: {{currentTheme.color}}">
+  <block wx:if="{{!isFinished}}">
+    <view class="tip">{{currentTip}}</view>
+    <view class="timer">{{timeLeft}}s</view>
+    <button class="control-btn" bindtap="togglePause">
+      {{isPaused ? '继续' : '暂停'}}
+    </button>
+  </block>
+  
+  <block wx:else>
+    <view class="encouragement">{{currentTheme.encouragement}}</view>
+    <button class="finish-btn" bindtap="backToHome">完成</button>
+  </block>
+</view> 
